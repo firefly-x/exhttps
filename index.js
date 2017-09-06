@@ -10,5 +10,5 @@ app.get('/',function(req,res) {
 
 https.createServer({
     cert: fs.readFileSync('../sslcert/fullchain.pem'),
-    key: fs.readFileSync('../sslcert/key.pem')
+    key: fs.readFileSync('../sslcert/privkey.pem')
 },app).listen(443);
